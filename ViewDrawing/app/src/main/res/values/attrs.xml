@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProportionPieChart">
+        <attr name="outerStrokeWidth" format="dimension" />
+        <attr name="ringSpc" format="dimension" />
+        <attr name="innerStrokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>
