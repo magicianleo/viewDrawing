@@ -111,6 +111,7 @@ public class ProportionPieChart extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        // 继承View默认情况下wrap_content和match_parent效用是一样的，需要进行处理
         int widthSpecMode = MeasureSpec.getMode(widthMeasureSpec);
         int widthSpecSize = MeasureSpec.getSize(widthMeasureSpec);
         int heightSpecMode = MeasureSpec.getMode(heightMeasureSpec);
@@ -134,6 +135,7 @@ public class ProportionPieChart extends View {
      * 确定内外环绘制区域
      */
     private void measurePieRect() {
+        // 继承View默认情况下padding设置不会生效，需要根据具体需求进行处理
         int width = getWidth() - getPaddingLeft() - getPaddingRight();
         int height = getHeight() - getPaddingTop() - getPaddingBottom();
 
@@ -179,7 +181,7 @@ public class ProportionPieChart extends View {
     }
 
     /**
-     * 一句padding确定绘制区域的位置
+     * 依据padding确定绘制区域的位置
      *
      * @param left   The X coordinate of the left side of the rectangle
      * @param top    The Y coordinate of the top of the rectangle
