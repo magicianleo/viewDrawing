@@ -18,8 +18,14 @@
         android:text="加载中..."
         android:textSize="20dp" />
 
+    <ImageView
+        android:id="@+id/proImgv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true" />
+
     <Button
-        android:id="@+id/startAnimationBtn"
+        android:id="@+id/startAnimBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
